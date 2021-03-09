@@ -8,9 +8,21 @@ module MyCore (
     output dbus_req_t  dreq,
     input  dbus_resp_t dresp
 );
-    /**
-     * TODO (Lab1) your code here :)
-     */
+    
+    fetch fetch_inst(
+    );
+
+    decode decode_inst(
+    );
+
+    excute excute_inst(
+    );
+
+    memory memory_inst(
+    );
+
+    writeback writeback_inst(
+    );
 
     always_ff @(posedge clk)
     if (resetn) begin
